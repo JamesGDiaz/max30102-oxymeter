@@ -1,0 +1,7 @@
+# Digital Oxymeter  based on Maxim's MAX30102 IC using the algorithm by [RF](https://github.com/aromring/MAX30102_by_RF) ported to Python.
+
+This also enables a local server to visualize the data in anyway you see fit. See [this other repo](https://github.com/JamesGDiaz/max30102-monitor) by me for ideas.
+Just build the proyect and place everything in the created `dist` folder inside the `templates` folder in this proyect.
+
+The file index.html will be served by the flask server and data will be transmitted via a socket.io instance on the /biometrics endpoint.
+Combine with NGINX for mor flexibility.
